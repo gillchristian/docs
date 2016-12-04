@@ -5,6 +5,8 @@
 
 1. [Processes](#processes)
   1. [List processes by port](#list-processes-by-port)
+1. [Services](#services)
+  1. [Systemctl](#systemctl)
 1. [Remote](#remote)
   1. [SSH](#ssh)
     1. [Add SSH Key to DigitalOcean droplet](#add-ss-hey-to-digitalocean-droplet)
@@ -36,6 +38,38 @@ Use `grep` to find specif ones
 ```bash
 $ netstat -tulpn | grep :80
 ```
+
+#Services
+
+###Systemctl
+
+`Systemd` is an init system and system manager that is widely becoming the new standard for Linux machines.
+
+####Start, stop, restart, reload, enable, disable & status
+
+```bash
+$ sudo systemctl start application.service
+# or
+$ sudo systemctl start application
+
+$ sudo systemctl stop application
+
+$ sudo systemctl restart application
+
+$ sudo systemctl reload application
+
+$ sudo systemctl reload-or-restart application
+
+$ sudo systemctl enable application
+
+$ sudo systemctl disable application
+
+$ sudo systemctl status application
+```
+
+`reload` is used to initiate the processes of an application that is able to reload the configuration files (without restarting).
+
+`enable` will create a symbolic link from the system's copy of the service file into the location on disk where `systemd` looks for autostart files.
 
 ## Remote
 

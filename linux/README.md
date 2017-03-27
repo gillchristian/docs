@@ -75,7 +75,11 @@ $ sudo systemctl status application
 
 ####Add services
 
-[CoreOS's Article](https://coreos.com/os/docs/latest/getting-started-with-systemd.html)
+[CoreOS's Article](https://coreos.com/os/docs/latest/getting-started-with-systemd.html).
+
+####Services logs
+
+[`journalctl`](http://unix.stackexchange.com/a/225407).
 
 ## Remote
 

@@ -41,13 +41,13 @@ Use `grep` to find specif ones
 $ netstat -tulpn | grep :80
 ```
 
-##Services
+## Services
 
-###Systemctl
+### Systemctl
 
 `Systemd` is an init system and system manager that is widely becoming the new standard for Linux machines.
 
-####Start, stop, restart, reload, enable, disable & status
+#### Start, stop, restart, reload, enable, disable & status
 
 ```bash
 $ sudo systemctl start application.service
@@ -73,11 +73,11 @@ $ sudo systemctl status application
 
 `enable` will create a symbolic link from the system's copy of the service file into the location on disk where `systemd` looks for autostart files.
 
-####Add services
+#### Add services
 
 [CoreOS's Article](https://coreos.com/os/docs/latest/getting-started-with-systemd.html).
 
-####Services logs
+#### Services logs
 
 [`journalctl`](http://unix.stackexchange.com/a/225407).
 

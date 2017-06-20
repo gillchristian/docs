@@ -5,6 +5,7 @@
 
 1. [Vim](https://github.com/gillchristian/docs/tree/master/linux/vim).
 1. [zsh](https://github.com/gillchristian/docs/tree/master/linux/zsh).
+1. [bash](https://github.com/gillchristian/docs/tree/master/linux/bash).
 1. [Processes](#processes)
   1. [List processes by port](#list-processes-by-port)
 1. [Services](#services)
